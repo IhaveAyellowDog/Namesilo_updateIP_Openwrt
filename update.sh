@@ -25,7 +25,7 @@ wget -O test.xml "https://www.namesilo.com/api/dnsListRecords?version=1&type=xml
 # get Local Host ip address
 current_ip="$(curl -s "$GET_IP_URL")"
 
-# added by Rong 20230328 begin
+# added by IhaveAyellow_Dog 20230328 begin
 echo " Check DNS for $rrhost.$domain_name ."
 
 # host_ip="$(hostip $rrhost.$domain_name)" 
@@ -50,7 +50,7 @@ fi
 
 #Begin get the rrid Value.added by ihaveAyellowDog.
 
-rrid=$(grep -o "................................</record_id><type>A</type><host>www.rongz.top</host>" test.xml | grep -o "^................................")
+rrid=$(grep -o "................................</record_id><type>A</type><host>$rrhost.$domain_name</host>" test.xml | grep -o "^................................")
 
 
 rm test.xml
