@@ -9,7 +9,6 @@ cd /var/
 # Login information of namesilo.com
 
 key=""
-tel_id=""
 domain_name=""
 rrid=""
 #rrid will get the value later
